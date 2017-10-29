@@ -9,8 +9,7 @@ int main(int argc, char **argv)
     int nota; // seleção 1
     double nota1, nota2, nota3, media, notafinal; // seleção 2
     char frequencia; // seleção 2
-    int f;
-    int f_1, f_2, cont, sequencia; //seleção 3
+    int f, f_1, f_2, cont, sequencia; //seleção 3
            
     cout << "1. Codigo para indicar o conceito do aluno.\n";
     cout << "2. Tarefa 1 (18.10.2017)\n";
@@ -91,17 +90,18 @@ int main(int argc, char **argv)
             cout << "Insira quantos termos da sequencia de Fibonacci deseja exibir: ";
             cin >> sequencia;
             f_2 = 0;
-            f_1 = 1;
+            f_1 = 0;
+            f = 1;
             for (cont = 1; cont <= sequencia; cont++)
             {
-                f = f_1 + f_2;
-                f_2 = f_1;
-                f_1 = f;
                 cout << "f(";
                 cout << cont;
                 cout << "): ";
                 cout << f;
                 cout << "\n";
+                f_2 = f_1;
+                f_1 = f;
+                f = f_1 + f_2;
             }
             break;
         }
