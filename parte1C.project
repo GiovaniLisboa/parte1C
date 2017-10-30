@@ -97,4 +97,6 @@
     <File Name="parte1C.h"/>
     <File Name="parte1C.cpp"/>
   </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
 </CodeLite_Project>
